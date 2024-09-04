@@ -29,4 +29,4 @@
 
 1. Clone este repositório em sua máquina local usando o comando:
    ```bash
-   git clone https://github.com/seuusuario/ListaDeTarefas.git
+   git clone https://github.com/JoaoOtavioEccel/ListaDeTarefas.git
