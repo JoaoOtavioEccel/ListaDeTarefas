@@ -1,5 +1,5 @@
 
-//? Variáveis HTML
+// Variáveis HTML
 
 const inputTarefa = document.querySelector('.input-nova-tarefa');
 const btnTarefa = document.querySelector('.btn-add-tarefa');
@@ -7,7 +7,7 @@ const tarefas = document.querySelector('.tarefas');
 
 
 
-//? Funções
+// Funções
 
 function criaLista() {
     const li = document.createElement('li');
@@ -47,6 +47,8 @@ function adicionaTarefasSalvas() {
     const tarefas = localStorage.getItem('tarefas');
     const listaDeTarefas = JSON.parse(tarefas);
     
+    if (!listaDeTarefas) return;
+
     for (let tarefa of listaDeTarefas) {
         criaTarefa(tarefa);
     }
